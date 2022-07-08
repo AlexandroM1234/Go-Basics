@@ -3,9 +3,11 @@ package main
 import (
 	"fmt"
 
-	"rsc.io/quote"
+	"example.com/greetings"
 )
 
 func main() {
-    fmt.Println(quote.Glass())
+    var message string = (greetings.Hello("Alex"))
+	
+	fmt.Println(message)
 }
