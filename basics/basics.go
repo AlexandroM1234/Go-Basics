@@ -48,6 +48,20 @@ func main()  {
 	// then call the built in make function to create that new type
 	hashMap := make(map[string]int)
 
+	// After creating the hashmap you can set the values by creating a key and then setting a value
+	// Note the key and the values have to be of the types you set when you created the map
+	hashMap["value1"] = 1
+	hashMap["value2"] = 231
+	hashMap["value3"] = 546
+
+	// Then to access the values you can just use bracket notation followed by the key in the hashmap
+	fmt.Println(hashMap["value1"])
+	fmt.Println(hashMap["value2"])
+	fmt.Println(hashMap["value3"])
+
+	// If we look up a key that doesn't exist the default value will be 0
+	fmt.Println(hashMap["key that doesn't exist"])
+
 	
 
 
